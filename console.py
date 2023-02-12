@@ -136,7 +136,7 @@ class HBNBCommand(cmd.Cmd):
         """
         Prints all string representation of all instances,
         based on class name or not.
-        _"""
+        """
         arg_list = split(argv)
         objects = self.storage.all().values()
         if not arg_list:
@@ -146,7 +146,7 @@ class HBNBCommand(cmd.Cmd):
                 print("** class doesn't exist **")
             else:
                 print([str(obj) for obj in objects
-                        if arg_list[0] in str(obj)])
+                       if arg_list[0] in str(obj)])
 
     def do_destroy(self, argv):
         """ Delete class instance based on name and given id """
@@ -169,7 +169,7 @@ class HBNBCommand(cmd.Cmd):
         """
         arg_list = check_args(argv)
         if arg_list:
-            if len(arg_list)  == 1:
+            if len(arg_list) == 1:
                 print("** instance id missing **")
             else:
                 instance_id = "{}.{}".format(arg_list[0], arg_list[1])
