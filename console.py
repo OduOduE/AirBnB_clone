@@ -73,7 +73,7 @@ class HBNBCommand(cmd.Cmd):
         """ Command to execute when empty line is passed """
         pass
 
-    def def default(self, arg):
+    def default(self, arg):
         """ Default behaviour for cmd module on invalid input """
         action_map = {
                 "all": self.do_all,
@@ -184,7 +184,7 @@ class HBNBCommand(cmd.Cmd):
                             v_type = type(obj.__class__.__dict__[arg_list[2]])
                             setattr(obj, arg_list[2], v_type(arg_list[3]))
                         else:
-                            setattr(obj, arg~_list[2], arg_list[3])
+                            setattr(obj, arg_list[2], arg_list[3])
                 else:
                     print("** no instance found **")
 
